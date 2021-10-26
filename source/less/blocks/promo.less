@@ -1,10 +1,24 @@
+.promo {
+  position: relative;
+}
+
+.promo__video {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
 .promo__title {
   font-size: 55px;
-  font-weight: 100;
+  font-weight: 300;
   text-align: center;
   background-color: @green-light;
   color: @green-dark;
   text-transform: uppercase;
+  position: relative;
 }
 
 .promo__title-letter {
@@ -12,7 +26,31 @@
 }
 
 .promo__wrapper {
+  padding: 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  background-color: @green-light;
+  color: @white;
+}
+
+.promo__img {
+  width: 200px;
+}
+
+.promo__list {
+  font-size: 13px;
+  font-weight: 100;
+}
+
+.promo__button {
+  display: block;
+  width: 190px;
+  margin: 30px auto;
+  background-color: @green-light;
+  color: @white;
+  border: none;
+  text-transform: uppercase;
+  border-radius: 30px;
+  padding: 10px;
 }

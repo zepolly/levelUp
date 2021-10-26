@@ -12,7 +12,7 @@
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Roboto:wght@400;700&family=Rye&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;700&display=swap" rel="stylesheet">
   </head>
 
   <body class="page-body">
@@ -20,6 +20,10 @@
     <main class="page-main">
 
       <section class="promo">
+        <video class="promo__video" loop="loop" autoplay="" muted="">
+          <source src="video/background-video.mp4" type="video/mp4">
+          <source src="video/background-video.webm" type="video/webm">
+        </video>
         <h1 class="promo__title">Level<span class="promo__title-letter">Up</span></h1>
         <div class="promo__wrapper">
           <picture>
@@ -33,38 +37,47 @@
             </ul>
           </div>
         </div>
-        <button class="promo__button" type="button" id="change">Изменить ингредиенты</button>
+        <button class="promo__button" type="button" id="form">заказать</button>
       </section>
 
-      <section class="ingredients visually-hidden" id="ingredients">
-        <div class="ingredients__wrapper">
-          <div>
-            <h2 class="ingredients__title">Big Ben</h2>
-            <picture>
-              <img class="ingredients__img" src="img/big-ben-mobile.png" srcset="img/big-ben-mobile@2x.png 2x" alt="">
-            </picture>
-          </div>
-          <div class="ingredients__description">
-            <p class="ingredients__description-object">Большой бургер с двумя рублеными бифштексами из 100% говядины на булочке с кунжутом, поджаренной в тостере, маринованными огурчиками, луком, свежим салатом «Айсберг», ломтиком плавленого сыра «Чеддер» и специальным соусом «Биг Бен».</p>
-            <p class="ingredients__cal">500 ккал</p>
-            <table class="ingredients__table">
-              <tr>
-                <th>Жиры</th>
-                <th>Углеводы</th>
-                <th>Сахар</th>
-                <th>Белки</th>
-                <th>Соль</th>
-              </tr>
-              <tr>
-                <td>27 г</td>
-                <td>42 г</td>
-                <td>8 г</td>
-                <td>27 г</td>
-                <td>2 г</td>
-              </tr>
-            </table>
-          </div>
-        </div>
+      <section class="composition">
+        <ul class="composition__list">
+          <li class="composition__item">
+            <img class="composition__img" src="img/product.png" srcset="img/product@2x.png@2x.png 2x" alt="Препарат от потенции">
+            <p>жгун-корня Моннье</p>
+          </li>
+          <li class="composition__item">
+            <img class="composition__img" src="img/product.png" srcset="img/product@2x.png@2x.png 2x" alt="Препарат от потенции">
+            <p>жгун-корня Моннье</p>
+          </li>
+          <li class="composition__item">
+            <img class="composition__img" src="img/product.png" srcset="img/product@2x.png@2x.png 2x" alt="Препарат от потенции">
+            <p>жгун-корня Моннье</p>
+          </li>
+        </ul>
+        <picture>
+          <img class="composition__img" src="img/product.png" srcset="img/product@2x.png@2x.png 2x" alt="Препарат от потенции">
+        </picture>
+        <ul class="composition__list">
+          <li class="composition__item">
+            <img class="composition__img" src="img/product.png" srcset="img/product@2x.png@2x.png 2x" alt="Препарат от потенции">
+            <p>жгун-корня Моннье</p>
+          </li>
+          <li class="composition__item">
+            <img class="composition__img" src="img/product.png" srcset="img/product@2x.png@2x.png 2x" alt="Препарат от потенции">
+            <p>жгун-корня Моннье</p>
+          </li>
+          <li class="composition__item">
+            <img class="composition__img" src="img/product.png" srcset="img/product@2x.png@2x.png 2x" alt="Препарат от потенции">
+            <p>жгун-корня Моннье</p>
+          </li>
+        </ul>
+        <button class="composition__button" type="button" id="form">заказать</button>
+
+
+
+
+
         <form action="#" method="get" class="ingredients__form">
           <fieldset class="ingredients__remove">
             <legend class="visually-hidden">убрать ингредиенты</legend>
