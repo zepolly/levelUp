@@ -1,0 +1,90 @@
+.main-nav {
+  position: relative;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 30px;
+  z-index: 2;
+  display: block;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  border: none;
+  background-color: @black;
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  width: 44px;
+  height: 44px;
+  background-color: @black;
+  background-image: url("../img/hamburger.svg");
+  background-size: contain;
+
+  @media (min-width: @tablet-width) {
+    width: 54px;
+    height: 54px;
+  }
+}
+
+.main-nav--opened .main-nav__toggle {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: -20px;
+    right: 0;
+    width: 24px;
+    height: 2px;
+    background-color: @white;
+    box-shadow: none;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+@media (max-width: @tablet-width-only) {
+  .main-nav--closed .main-nav__item {
+    display: none;
+  }
+}
+
+.main-nav__list {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @desktop-width) {
+    width: 570px;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+.main-nav__item {
+  &:focus {
+    color: @yellow;
+  }
+
+  &:hover {
+    color: @yellow;
+  }
+
+  &:active {
+    color: @orange;
+  }
+}
