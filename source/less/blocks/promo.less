@@ -7,8 +7,8 @@
   transform: translate(-50%, -50%);
   opacity: 0.5;
   top: 0;
+  z-index: 1;
   left: 0;
-  z-index: 0;
 }
 
 .promo__title {
@@ -19,6 +19,7 @@
   color: @green-dark;
   text-transform: uppercase;
   position: relative;
+  z-index: 2;
 }
 
 .promo__title-letter {
@@ -35,15 +36,21 @@
 }
 
 .promo__img {
+  position: relative;
+  z-index: 3;
   width: 200px;
 }
 
 .promo__list {
+  position: relative;
+  z-index: 4;
   font-size: 13px;
   font-weight: 100;
 }
 
 .promo__button {
+  position: relative;
+  z-index: 5;
   display: block;
   width: 190px;
   margin: 30px auto;

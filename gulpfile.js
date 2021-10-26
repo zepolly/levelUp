@@ -64,6 +64,27 @@ const copyImages = () => {
 
 exports.images = copyImages;
 
+//video
+
+const optimizeVideo = () => {
+  return gulp.src("source/video/**/*.{mp4,webm}")
+    .pipe(videomin([
+      videomin.mozjpeg({progressive: true}),
+      videomin.optipng({optimizationLevel: 3}),
+      videomin.svgo()
+    ]))
+    .pipe(gulp.dest("build/video"))
+}
+
+exports.video = optimizeVideo;
+
+const copyVideo = () => {
+  return gulp.src("source/video/**/*.{mp4,webm}")
+    .pipe(gulp.dest("build/video"))
+}
+
+exports.images = copyVideo;
+
 // WebP
 
 const createWebp = () => {
@@ -146,6 +167,7 @@ const build = gulp.series(
   clean,
   copy,
   optimizeImages,
+  optimizeVideo,
   gulp.parallel(
     styles,
     html,
@@ -163,6 +185,7 @@ exports.default = gulp.series(
   clean,
   copy,
   copyImages,
+  copyVideo,
   gulp.parallel(
     styles,
     html,
