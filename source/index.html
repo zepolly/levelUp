@@ -27,7 +27,7 @@
         <h1 class="promo__title">Level<span class="promo__title-letter">Up</span></h1>
         <div class="promo__wrapper">
           <picture>
-            <img class="promo__img" src="img/product.png" srcset="img/product@2x.png@2x.png 2x" alt="Препарат от потенции">
+            <img class="promo__img" src="img/product.png" srcset="img/product@2x.png 2x" alt="Препарат от потенции">
           </picture>
           <div class="promo__container">
             <ul class="promo__list">
@@ -37,271 +37,202 @@
             </ul>
           </div>
         </div>
-        <button class="promo__button" type="button" id="form">заказать</button>
+        <button class="promo__button" type="button" onclick="location.href='#form'">заказать</button>
       </section>
 
       <section class="composition">
-        <ul class="composition__list">
-          <li class="composition__item">
-            <img class="composition__img" src="img/substance.png" srcset="img/substance@2x.png@2x.png 2x" alt="Препарат от потенции">
-            <p class="composition__description">жгун-корня Моннье</p>
-          </li>
-          <li class="composition__item">
-            <img class="composition__img" src="img/substance.png" srcset="img/substance@2x.png@2x.png 2x" alt="Препарат от потенции">
-            <p class="composition__description">жгун-корня Моннье</p>
-          </li>
-          <li class="composition__item">
-            <img class="composition__img" src="img/substance.png" srcset="img/substance@2x.png@2x.png 2x" alt="Препарат от потенции">
-            <p class="composition__description">жгун-корня Моннье</p>
-          </li>
-        </ul>
-        <picture>
-          <img class="composition__img-center" src="img/product.png" srcset="img/product@2x.png@2x.png 2x" alt="Препарат от потенции">
-        </picture>
-        <ul class="composition__list">
-          <li class="composition__item">
-            <img class="composition__img" src="img/substance.png" srcset="img/substance@2x.png@2x.png 2x" alt="Препарат от потенции">
-            <p class="composition__description">жгун-корня Моннье</p>
-          </li>
-          <li class="composition__item">
-            <img class="composition__img" src="img/substance.png" srcset="img/substance@2x.png@2x.png 2x" alt="Препарат от потенции">
-            <p class="composition__description">жгун-корня Моннье</p>
-          </li>
-          <li class="composition__item">
-            <img class="composition__img" src="img/substance.png" srcset="img/substance@2x.png@2x.png 2x" alt="Препарат от потенции">
-            <p class="composition__description">жгун-корня Моннье</p>
-          </li>
-        </ul>
-        <button class="composition__button" type="button" id="form">заказать</button>
-
-
-
-
-
-        <form action="#" method="get" class="ingredients__form">
-          <fieldset class="ingredients__remove">
-            <legend class="visually-hidden">убрать ингредиенты</legend>
-            <ul class="ingredients__list">
-              <li class="ingredients__item">
-                <input class="visually-hidden ingredients__checkbox" type="checkbox" name="salad" id="salad" value="Убрать салат" checked>
-                <label for="salad">Убрать салат</label>
-              </li>
-              <li class="ingredients__item">
-                <input class="visually-hidden ingredients__checkbox" type="checkbox" name="cheese" id="cheese" value="Убрать сыр">
-                <label for="cheese">Убрать сыр</label>
-              </li>
-              <li class="ingredients__item">
-                <input class="visually-hidden ingredients__checkbox" type="checkbox" name="salt" id="salt" value="Убрать соль">
-                <label for="salt">Убрать соль</label>
-              </li>
-              <li class="ingredients__item">
-                <input class="visually-hidden ingredients__checkbox" type="checkbox" name="cutlet" id="cutlet" value="Убрать котлету">
-                <label for="cutlet">Убрать котлету</label>
-              </li>
-              <li class="ingredients__item">
-                <input class="visually-hidden ingredients__checkbox" type="checkbox" name="sauce" id="sauce" value="Убрать соус">
-                <label for="sauce">Убрать соус</label>
-              </li>
-              <li class="ingredients__item">
-                <input class="visually-hidden ingredients__checkbox" type="checkbox" name="onion" id="onion" value="Убрать лук">
-                <label for="onion">Убрать лук</label>
-              </li>
-              <li class="ingredients__item">
-                <input class="visually-hidden ingredients__checkbox" type="checkbox" name="cucumber" id="cucumber" value="Убрать огурчики">
-                <label for="cucumber">Убрать огурчики</label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="ingredients__add">
-            <legend class="visually-hidden">добавить ингредиенты</legend>
-            <ul class="ingredients__list">
-              <li class="ingredients__item ingredients__item-add">
-                <input class="visually-hidden ingredients__checkbox-add" type="checkbox" name="cheese-add" id="cheese-add" value="Добавить сыр" checked>
-                <label for="cheese-add">Добавить сыр</label>
-              </li>
-              <li class="ingredients__item ingredients__item-add">
-                <input class="visually-hidden ingredients__checkbox-add" type="checkbox" name="sauce-add" id="sauce-add" value="Добавить соус">
-                <label for="sauce-add">Добавить соус</label>
-              </li>
-              <li class="ingredients__item ingredients__item-add">
-                <input class="visually-hidden ingredients__checkbox-add" type="checkbox" name="sauce-sharp" id="sauce-sharp" value="Добавить острый соус">
-                <label for="sauce-sharp">Добавить острый соус</label>
-              </li>
-              <li class="ingredients__item ingredients__item-add">
-                <input class="visually-hidden ingredients__checkbox-add" type="checkbox" name="cucumber-add" id="cucumber-add" value="Добавить огурчики">
-                <label for="cucumber-add">Добавить огурчики</label>
-              </li>
-            </ul>
-            <p class="ingredients__price">145 руб.</p>
-            <a href="#" class="ingredients__link">Купить</a>
-            <div class="ingredients__counter">
-              <span class="ingredients__minus">-</span>
-              <input class="ingredients__number" type="text" value="1" size="1">
-              <span class="ingredients__plus">+</span>
-            </div>
-          </fieldset>
-        </form>
+        <div class="composition__container">
+          <ul class="composition__list">
+            <li class="composition__item composition__item-first">
+              <img class="composition__img" src="img/substance.png" srcset="img/substance@2x.png 2x" alt="Препарат от потенции">
+              <p class="composition__description">icubita</p>
+            </li>
+            <li class="composition__item composition__item-second">
+              <img class="composition__img" src="img/substance.png" srcset="img/substance@2x.png 2x" alt="Препарат от потенции">
+              <p class="composition__description">icubita</p>
+            </li>
+            <li class="composition__item composition__item-third">
+              <img class="composition__img" src="img/substance.png" srcset="img/substance@2x.png 2x" alt="Препарат от потенции">
+              <p class="composition__description">icubita</p>
+            </li>
+          </ul>
+          <picture>
+            <img class="composition__img-center" src="img/product.png" srcset="img/product@2x.png 2x" alt="Препарат от потенции">
+          </picture>
+          <ul class="composition__list">
+            <li class="composition__item composition__item-fourth">
+              <img class="composition__img" src="img/substance.png" srcset="img/substance@2x.png 2x" alt="Препарат от потенции">
+              <p class="composition__description">icubita</p>
+            </li>
+            <li class="composition__item composition__item-fifth">
+              <img class="composition__img" src="img/substance.png" srcset="img/substance@2x.png 2x" alt="Препарат от потенции">
+              <p class="composition__description">icubita</p>
+            </li>
+            <li class="composition__item composition__item-sixth">
+              <img class="composition__img" src="img/substance.png" srcset="img/substance@2x.png 2x" alt="Препарат от потенции">
+              <p class="composition__description">icubita</p>
+            </li>
+          </ul>
+        </div>
+        <button class="composition__button" type="button" onclick="location.href='#form'">заказать</button>
       </section>
 
-      <section class="menu">
-        <h3 class="menu__title">Big Ben</h3>
-        <p class="menu__subtitle">Комбо</p>
-        <ul class="menu__list">
-          <li class="menu__item menu__item-first">
-            <p class="menu__number">1</p>
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/combo-first-desktop.png, img/combo-first-desktop@2x.png 2x">
-              <source media="(min-width: 720px)" srcset="img/combo-first-tablet.png, img/combo-first-tablet@2x.png 2x">
-              <img class="menu__img" src="img/combo-first-mobile.png" srcset="img/combo-first-mobile@2x.png 2x" alt="Big Ben Комбо">
-            </picture>
-            <p class="menu__description">Двойной Биг Бен, Картофель фри (бол.), напиток на выбор (0,5)</p>
-            <p class="menu__price">199 руб.</p>
-            <a class="menu__link" href="form.html">Купить</a>
+      <section class="reviews">
+        <ul class="reviews__list reviews_slider">
+          <li class="reviews__item reviews__item-slide fade">
+            <img src="img/alex.jpg" srcset="img/alex@2x.jpg 2x" alt="Алекс" class="reviews__img">
+            <div class="reviews_container">
+              <p class="reviews__name">Алекс</p>
+              <p class="reviews__description">Это лучшее средство на свете!</p>
+            </div>
           </li>
-          <li class="menu__item menu__item-second">
-            <p class="menu__number">2</p>
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/combo-second-desktop.png, img/combo-second-desktop@2x.png 2x">
-              <source media="(min-width: 720px)" srcset="img/combo-second-tablet.png, img/combo-second-tablet@2x.png 2x">
-              <img class="menu__img" src="img/combo-second-mobile.png" srcset="img/combo-second-mobile@2x.png 2x" alt="Big Ben Комбо">
-            </picture>
-            <p class="menu__description">Два двойных Биг Бена, два картофеля фри (бол.), наггетсы (бол.), соус, два напитка на выбор (0,5)</p>
-            <p class="menu__price">399 руб.</p>
-            <a class="menu__link" href="form.html">Купить</a>
+          <li class="reviews__item reviews__item-slide fade">
+            <img src="img/gleb.jpg" srcset="img/gleb@2x.jpg 2x" alt="Глеб" class="reviews__img">
+            <div class="reviews_container">
+              <p class="reviews__name">Глеб</p>
+              <p class="reviews__description">Оно помогло мне за считанные секунды!</p>
+            </div>
           </li>
-          <li class="menu__item menu__item-third">
-            <p class="menu__number">3</p>
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/combo-third-desktop.png, img/combo-third-desktop@2x.png 2x">
-              <source media="(min-width: 720px)" srcset="img/combo-third-tablet.png, img/combo-third-tablet@2x.png 2x">
-              <img class="menu__img" src="img/combo-third-mobile.png" srcset="img/combo-third-mobile@2x.png 2x" alt="Big Ben Комбо">
-            </picture>
-            <p class="menu__description">Два двойных Биг Бена, два чизбургера, Два картофеля фри (бол.), два напитка на выбор (0,5)</p>
-            <p class="menu__price">499 руб.</p>
-            <a class="menu__link" href="form.html">Купить</a>
+          <li class="reviews__item reviews__item-slide fade">
+            <img src="img/anton.jpg" srcset="img/anton@2x.jpg 2x" alt="Антон" class="reviews__img">
+            <div class="reviews_container">
+              <p class="reviews__name">Антон</p>
+              <p class="reviews__description">Быстрая доставка и хороший состав</p>
+            </div>
           </li>
         </ul>
+        <button class="reviews__prev" onclick="plusSlides(-1)">&#10094;</button>
+        <button class="reviews__next" onclick="plusSlides(1)">&#10095;</button>
       </section>
 
-      <section class="stocks">
-        <h3 class="stocks__title">Акции</h3>
-        <p class="stocks__description">Купи 3 Биг Бена и получи кофе в подарок!</p>
+      <section class="product">
         <picture>
-          <source media="(min-width: 1200px)" srcset="img/stocks-desktop.png, img/stocks-desktop@2x.png 2x">
-          <source media="(min-width: 720px)" srcset="img/stocks-tablet.png, img/stocks-tablet@2x.png 2x">
-          <img class="stocks__img-combo" src="img/stocks-mobile.png" srcset="img/stocks-mobile@2x.png 2x" alt="три Big Ben плюс кофе">
+          <img class="promo__img" src="img/doc.png" srcset="img/doc@2x.png 2x" alt="Доктор с препаратом от потенции">
         </picture>
-        <p class="stocks__description">Скидки при покупке Биг Бена:</p>
-        <ul class="stocks__list">
-          <li class="stocks__item">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/coffee-desktop.png, img/coffee-desktop@2x.png 2x">
-              <source media="(min-width: 720px)" srcset="img/coffee-tablet.png, img/coffee-tablet@2x.png 2x">
-              <img class="stocks__img" src="img/coffee-mobile.png" srcset="img/coffee-mobile@2x.png 2x" alt="кофе">
-            </picture>
-            <h4>Кофе 0,4</h4>
-            <div class="stocks__item-price">
-              <p class="stocks__item-old-price">109 руб.</p>
-              <p class="stocks__item-new-price">79 руб.</p>
-            </div>
-            <a class="stocks__link" href="">Купить</a>
-          </li>
-          <li class="stocks__item">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/potato-desktop.png, img/potato-desktop@2x.png 2x">
-              <source media="(min-width: 720px)" srcset="img/potato-tablet.png, img/potato-tablet@2x.png 2x">
-              <img class="stocks__img" src="img/potato-mobile.png" srcset="img/potato-mobile@2x.png 2x" alt="большой картофель фри">
-            </picture>
-            <h4>Картофель фри (бол.)</h4>
-            <div class="stocks__item-price">
-              <p class="stocks__item-old-price">89 руб.</p>
-              <p class="stocks__item-new-price">69 руб.</p>
-            </div>
-            <a class="stocks__link" href="">Купить</a>
-          </li>
-          <li class="stocks__item">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/nuggets-desktop.png, img/nuggets-desktop@2x.png 2x">
-              <source media="(min-width: 720px)" srcset="img/nuggets-tablet.png, img/nuggets-tablet@2x.png 2x">
-              <img class="stocks__img" src="img/nuggets-mobile.png" srcset="img/nuggets-mobile@2x.png 2x" alt="большие наггетсы">
-            </picture>
-            <h4>Наггетсы (бол.)</h4>
-            <div class="stocks__item-price">
-              <p class="stocks__item-old-price">119 руб.</p>
-              <p class="stocks__item-new-price">99 руб.</p>
-            </div>
-            <a class="stocks__link" href="">Купить</a>
-          </li>
-          <li class="stocks__item">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/muffin-desktop.png, img/muffin-desktop@2x.png 2x">
-              <source media="(min-width: 720px)" srcset="img/muffin-tablet.png, img/muffin-tablet@2x.png 2x">
-              <img class="stocks__img" src="img/muffin-mobile.png" srcset="img/muffin-mobile@2x.png 2x" alt="Маффин">
-            </picture>
-            <h4>Маффин</h4>
-            <div class="stocks__item-price">
-              <p class="stocks__item-old-price">79 руб.</p>
-              <p class="stocks__item-new-price">59 руб.</p>
-            </div>
-            <a class="stocks__link" href="">Купить</a>
-          </li>
+        <p class="product__description">Биогенный полиактивный комплекс не содержит искусственных, психотропных, лекарственных веществ, гормонов и консервантов</p>
+        <ul class="product__list">
+            <li class="product__item">из природных материалов</li>
+            <li class="product__item">в разных объемах</li>
+            <li class="product__item">действует с первого применения</li>
         </ul>
-        <a class="stocks__link-all" href="">Посмотреть все акции</a>
+        <button class="product__button" type="button" onclick="location.href='#form'">заказать</button>
+      </section>
+
+      <section class="form">
+        <h2 class="form__title">Level<span class="form__title-letter">Up</span></h2>
+        <div id="form__timer"></div>
+        <div class="form__wrapper">
+          <div>
+            <picture>
+              <img class="form__img" src="img/product.png" srcset="img/product@2x.png 2x" alt="Препарат от потенции">
+            </picture>
+            <div class="form__price">
+              <p class="form__price-old">5900р.</p>
+              <p class="form__price-new">3900р.</p>
+            </div>
+          </div>
+          <form action="#" class="form__data" method="get" id="form">
+            <fieldset class="form__data-container">
+              <ul class="form__data-list">
+                <li class="form__data-item">
+                  <label for="name">Имя:</label>
+                  <input class="form__data-item-name" id="name" name="name" placeholder="Олег" type="text">
+                </li>
+                <li class="form__data-item">
+                  <label for="phone">Телефон:</label>
+                  <input class="form__data-item-phone" id="phone" name="phone" placeholder="8 (960) 900-60-90" type="tel">
+                </li>
+              </ul>
+            </fieldset>
+            <button class="form__data-submit" type="submit">Отправить заявку</button>
+          </form>
+        </div>
       </section>
 
     </main>
 
-    <footer class="page-footer">
-
-      <section>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.6470757750667!2d37.614929115712094!3d55.764632780556546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a43b3c3fa9d%3A0xc92ce7301750de35!2z0J_QtdGC0YDQvtCy0LrQsCDRg9C7LiwgMjIsINCc0L7RgdC60LLQsCwgMTI3MDUx!5e0!3m2!1sru!2sru!4v1623499048797!5m2!1sru!2sru" width="100%" height="350px" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
-      </section>
-
-    </footer>
-
     <script type="text/javascript">
-      var navMain = document.querySelector('.main-nav');
-      var navToggle = document.querySelector('.main-nav__toggle');
-      var change = document.querySelector ('#change');
-      var ingredients = document.querySelector ('#ingredients');
+      var slideIndex = 1;
+      showSlides(slideIndex);
 
-      navMain.classList.remove('main-nav--nojs');
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
 
-      navToggle.addEventListener('click', function() {
-        if (navMain.classList.contains('main-nav--closed')) {
-          navMain.classList.remove('main-nav--closed');
-          navMain.classList.add('main-nav--opened');
-        } else {
-          navMain.classList.add('main-nav--closed');
-          navMain.classList.remove('main-nav--opened');
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("reviews__item-slide");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
         }
-      });
+        slides[slideIndex-1].style.display = "flex";
+      }
 
-      change.onclick = function() {
-        if (ingredients.classList.contains('visually-hidden')){
-          ingredients.classList.remove('visually-hidden');
-          ingredients.classList.add('show' );
-        } else {
-          ingredients.classList.add('visually-hidden');
-          ingredients.classList.remove('show');
-        }};
+      const FULL_DASH_ARRAY = 283;
+      const WARNING_THRESHOLD = 10;
+      const ALERT_THRESHOLD = 5;
 
-        $(document).ready(function() {
-          $('.ingredients__minus').click(function () {
-            var $input = $(this).parent().find('.ingredients__number');
-            var count = parseInt($input.val()) - 1;
-            count = count < 1 ? 1 : count;
-            $input.val(count);
-            $input.change();
-            return false;
-          });
-          $('.ingredients__plus').click(function () {
-            var $input = $(this).parent().find('.ingredients__number');
-            $input.val(parseInt($input.val()) + 1);
-            $input.change();
-            return false;
-          });
-        });
+      const COLOR_CODES = {
+        info: {
+          color: "green"
+        },
+        warning: {
+          color: "orange",
+          threshold: WARNING_THRESHOLD
+        },
+        alert: {
+          color: "red",
+          threshold: ALERT_THRESHOLD
+        }
+      };
+
+      const TIME_LIMIT = 1800;
+      let timePassed = 0;
+      let timeLeft = TIME_LIMIT;
+      let timerInterval = null;
+      let remainingPathColor = COLOR_CODES.info.color;
+
+      document.getElementById("form__timer").innerHTML = `
+      <div class="form__timer">
+        <span id="form__timer-label">${formatTime(
+          timeLeft
+        )}</span>
+      </div>
+      `;
+
+      startTimer();
+
+      function onTimesUp() {
+        clearInterval(timerInterval);
+      }
+
+      function startTimer() {
+        timerInterval = setInterval(() => {
+          timePassed = timePassed += 1;
+          timeLeft = TIME_LIMIT - timePassed;
+          document.getElementById("form__timer-label").innerHTML = formatTime(
+            timeLeft
+          );
+
+        }, 2000);
+      }
+
+      function formatTime(time) {
+        const minutes = Math.floor(time / 60);
+        let seconds = time % 60;
+
+        if (seconds < 10) {
+          seconds = `0${seconds}`;
+        }
+
+        return `${minutes}:${seconds}`;
+      }
     </script>
 
   </body>

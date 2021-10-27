@@ -9,6 +9,8 @@
   top: 0;
   z-index: 1;
   left: 0;
+  width: 200%;
+  margin-top: 170px;
 }
 
 .promo__title {
@@ -20,6 +22,14 @@
   text-transform: uppercase;
   position: relative;
   z-index: 2;
+
+  @media (min-width: @tablet-width) {
+    font-size: 75px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 95px;
+  }
 }
 
 .promo__title-letter {
@@ -46,6 +56,16 @@
   z-index: 4;
   font-size: 13px;
   font-weight: 100;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 35px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 35px;
+    line-height: 45px;
+  }
 }
 
 .promo__button {
@@ -60,4 +80,11 @@
   text-transform: uppercase;
   border-radius: 30px;
   padding: 10px;
+  cursor: pointer;
+
+  @media (min-width: @desktop-width) {
+    width: 250px;
+    font-size: 35px;
+    line-height: 45px;
+  }
 }

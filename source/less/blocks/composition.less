@@ -1,17 +1,147 @@
+.composition {
+  margin-top: 50px;
+  background: @green-gradient;
+  padding-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 30px 100px;
+    margin-top: 140px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 40px 200px;
+    margin-top: 310px;
+  }
+}
+
+.composition__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.composition__list {
+  padding: 0;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
 .composition__item {
   position: relative;
 }
 
+.composition__item::after {
+  content: "";
+  position: absolute;
+  top: 25px;
+  width: 35px;
+  height: 1px;
+  background-color: @white;
+
+  @media (min-width: @desktop-width) {
+    width: 100px;
+    height: 2px;
+    top: 50px;
+  }
+}
+
+.composition__item-first::after {
+  transform: rotate(20deg);
+}
+
+.composition__item-third::after {
+  transform: rotate(-20deg);
+}
+
+.composition__item-fourth::after {
+  left: -35px;
+  transform: rotate(-20deg);
+
+  @media (min-width: @desktop-width) {
+    left: -100px;
+  }
+}
+
+.composition__item-fifth::after {
+  left: -35px;
+
+  @media (min-width: @desktop-width) {
+    left: -100px;
+  }
+}
+
+.composition__item-sixth::after {
+  left: -35px;
+  transform: rotate(20deg);
+
+  @media (min-width: @desktop-width) {
+    left: -100px;
+  }
+}
+
 .composition__img {
   border-radius: 50%;
-  width: 90px;
+  width: 60px;
+  height: 60px;
+  border: 3px solid @green-dark;
+
+  @media (min-width: @tablet-width) {
+    width: 90px;
+    height: 90px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 110px;
+    height: 110px;
+  }
 }
 
 .composition__description {
   position: absolute;
   z-index: 3;
-  bottom: 10px;
-  left: 30px;
+  bottom: 5px;
+  left: 11px;
   color: @white;
-  font-size: 12px;
+  font-size: 10px;
+  line-height: 10px;
+  font-weight: 500;
+  background-color: @green-light;
+
+  @media (min-width: @desktop-width) {
+    font-size: 20px;
+  }
+}
+
+.composition__img-center {
+  width: 120px;
+
+  @media (min-width: @tablet-width) {
+    width: 200px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 300px;
+  }
+}
+
+.composition__button {
+  position: relative;
+  z-index: 5;
+  display: block;
+  width: 190px;
+  margin: 0 auto;
+  background-color: @green;
+  color: @white;
+  border: none;
+  text-transform: uppercase;
+  border-radius: 30px;
+  padding: 10px;
+  cursor: pointer;
+
+  @media (min-width: @desktop-width) {
+    width: 250px;
+    font-size: 35px;
+    line-height: 45px;
+    margin-top: 20px;
+  }
 }
